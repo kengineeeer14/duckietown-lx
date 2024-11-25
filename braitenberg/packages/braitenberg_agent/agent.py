@@ -17,9 +17,10 @@ from aido_schemas import (
     PWMCommands,
     RGB,
 )
-
-from solution.connections import get_motor_left_matrix, get_motor_right_matrix
-from solution.preprocessing import preprocess
+import sys
+sys.path.append("/home/ken/Repos/duckietown/duckietown-lx")
+from braitenberg.packages.solution.connections import get_motor_left_matrix, get_motor_right_matrix
+from braitenberg.packages.solution.preprocessing import preprocess
 
 
 # TODO edit this Config class ! Play with different gain and const values
